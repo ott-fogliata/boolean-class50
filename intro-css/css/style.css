@@ -1,0 +1,52 @@
+body {
+    background-color: #eee;  /* colore esadecimale todo! */
+}
+
+/* classi utility */
+.text-blue {
+    color:blue; /* colore del font */
+}
+
+.border-2px {
+    border:2px black solid;
+}
+
+/* -------------------- */
+
+#picture {
+    border: 2px black solid;
+    width: 500px;
+    height: 600px
+}
+
+.container-description {
+    width: 300px;
+}
+
+.description {
+    background-color: rgba(42, 53, 42, 0.5);
+    color: #fff;
+}
+
+.first-description {
+    color: rgb(51, 106, 51);
+}
+
+.second-description {
+    color: rgba(42, 53, 42, 0.5);
+}
+
+.third-description {
+    color: #333;
+    font-weight: lighter;
+    font-family: 'Roboto', sans-serif;
+}
+
+.test-background {
+   /* background: bg_color bg_image bg_repeat bg_attachment bg_position; */ 
+   background: url("../img/wallpaper.jpg") no-repeat 50% 50%;
+   background-size: cover;
+   width: 400px;
+   height: 400px;
+   color: #fff;
+}
