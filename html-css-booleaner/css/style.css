@@ -1,0 +1,68 @@
+.container {
+    width: 1200px;
+}
+
+header {
+    /* background: bg_color bg_image bg_repeat bg_attachment bg_position; */ 
+    background: #4ea0ff url('../img/pattern.png');
+    background-size: 30%;
+    height: 100px;
+}
+
+.logo {
+    margin-top: 40px;
+    width: 200px;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+.photos {
+    height: 300px;
+}
+
+.news-img {
+    height: 100%;
+}
+
+ul {
+    padding-left: 15px; /* todo, un giorno la faremo meglio! */
+}
+
+table {
+    width: 100%;
+    border-spacing: 0;
+}
+
+thead {
+    background-color: #20a9e5;
+}
+
+.colored {
+    background-color: #b1e5f2;
+}
+
+th {
+    text-align: left;
+}
+
+.text {
+    width: 50%;
+}
+
+.correlato-1 {
+    background: url("../img/monitor.jpg") no-repeat 50% 50%;
+    background-size: cover;
+    width: 250px;
+    height: 250px;
+    color: #fff;
+    
+    padding-left: 15px;
+    padding-top: 5px;
+
+}
+
+.correlato-1 h2 {
+    font-size: 20px;
+}
