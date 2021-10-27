@@ -117,7 +117,7 @@ header {
     padding: 15px 30px;
 }
 
-header img {
+header > img {
     vertical-align: middle;
 }
 
