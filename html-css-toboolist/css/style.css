@@ -98,6 +98,13 @@ ul {
     background-color: #ff9b00;
 }
 
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    border: 2px orangered solid;
+}
+
 /* ------------------------------------------- */
 
 body {
@@ -131,4 +138,14 @@ header img {
 
 .inner-list li{
     padding: 5px 10px;
+}
+
+
+.box-1 {
+    margin-bottom: 20px;
+}
+
+
+.box-2 {
+    margin-top: 50px;
 }
