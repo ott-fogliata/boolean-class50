@@ -1,0 +1,134 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 900px;
+    margin: 0 auto;
+}
+
+.button {
+    display: inline-block;
+    vertical-align: middle;
+    background: #333;
+    border: 0;
+    color: #fff;
+    height: 26px;
+    padding: 0 10px;
+    line-height: 26px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.area-padding {
+    padding: 10px 50px;
+}
+
+.circle {
+    display: inline-block;
+    border: 1px #333 solid;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    font-size: 10px;
+    line-height: 20px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.circle::before {
+    content: '\2713';
+}
+
+ul {
+    list-style: none;
+}
+
+.tag {
+    padding: 5px 8px;
+    font-size: 10px;
+    background: #ccc;
+    border-radius: 10px;
+    color: #fff;
+    vertical-align: middle;
+
+}
+
+/* la classe active che ha anche la classe button */
+.button.active {
+    background-color: #09a9ed;
+}
+
+.button.disable {
+    background-color: #fff;
+    color: #ccc;
+    border: 1px #ccc solid;
+}
+
+.circle.checked {
+    color: #2cc6ab;
+    border-color: #2cc6ab;
+}
+
+.circle.deleted {
+    color: #ff0000;
+    border-color: #ff0000;
+}
+
+.circle.deleted::before {
+    content: '\2573';
+}
+
+.tag.blue {
+    background-color: #09a9ed;
+}
+
+.tag.violet {
+    background-color: #ab5de6;
+}
+
+.tag.green {
+    background-color: #2cc6ab;
+}
+
+.tag.orange {
+    background-color: #ff9b00;
+}
+
+/* ------------------------------------------- */
+
+body {
+    background-color: #eee;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: white;
+    padding: 15px 30px;
+}
+
+header img {
+    vertical-align: middle;
+}
+
+.logo-text {
+    font-size: 32px;
+    font-weight: bold;
+    vertical-align: middle;
+}
+
+.box-principale {
+    background-color: #fff;
+    margin-top: 50px;
+    border-radius: 5px;
+}
+.buttons {
+    border-bottom: 2px #eee solid;
+}
+
+.inner-list li{
+    padding: 5px 10px;
+}
