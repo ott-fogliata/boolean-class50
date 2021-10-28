@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1000px;
+    background-color: cadetblue;
+    margin: 0 auto;
+}
+
+
+.card {
+    display: inline-block;
+    width: calc(1000px / 4 - 33px);
+    margin: 0 15px;
+    height: 300px;
+    border: 1px #ccc solid;
+    background: url("../img/pattern.png");
+    background-size: 90%;
+    padding: 50px 0;
+    position: relative;
+}
+
+.card img {
+    width: 100%;
+    display: none;
+}
+
+.card:hover {
+    background: #fff;
+}
+
+.card:hover img {
+    display: block;
+}
+
+.red {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    background-color: red;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
