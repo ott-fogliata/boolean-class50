@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.row::after {
+    content:"";
+    display: table;
+    clear: both;
+}
+
+header {
+    background-color: green;
+    height: 150px;
+    margin-bottom: 20px;
+}
+
+main {
+    float:left;
+    background-color: blue;
+    width: calc(70% - 20px);
+    margin-right: 20px;
+    height: 800px;
+}
+
+.sidebar {
+    float:left;
+    background-color: orangered;
+    height: 800px;
+    width: 30%;
+}
+
+footer {
+    margin-top: 20px;
+    height: 150px;
+    background-color: brown;
+}
