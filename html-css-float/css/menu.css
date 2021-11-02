@@ -50,9 +50,7 @@ main {
 }
 
 .text {
-    width: 200px;
-    height: 100px;
     position: absolute;
-    bottom: 0;
-    right: 0;
+    bottom: 70px;
+    right: 50px;
 }
