@@ -42,3 +42,17 @@ nav ul li a {
 nav ul li a:hover {
     text-decoration: underline;
 }
+
+main {
+    height: 350px;
+    background: #ccc;
+    position: relative;
+}
+
+.text {
+    width: 200px;
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
