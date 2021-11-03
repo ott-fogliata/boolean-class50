@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    /* width: 1200px; */
+    margin: 0 auto;
+}
+
+.box {
+    background: #ccc;
+    height: 100vh;
+    position: relative;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.box:hover::after {
+    opacity: 0;
+}
+
+.box::after {
+    content:"";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.3;
+    z-index: 1;
+}
+
+.box-1 {
+    background-image: url("../img/colosseo.jpeg");
+}
+
+.box-2 {
+    background-image: url("../img/napoli.jpeg");
+}
+
+.box-3 {
+    background-image: url("../img/milano.webp");
+}
+
+.box-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 30px;
+    text-shadow: 2px 2px #000;
+    z-index: 2
+}
+
