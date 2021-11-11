@@ -7,6 +7,13 @@
 .page {
     background: #eee;
     padding: 40px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+p.code {
+    margin: 5px 0;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .flex-container {
@@ -15,6 +22,7 @@
 
 [class*="container"] {
     margin: 10px 0;
+    border: 2px #333 solid;
 }
 
 h2 {
@@ -27,7 +35,7 @@ h2:first-child {
 [class^="item"] {
     width: 150px;
     height: 150px;
-    background-color: brown;
+    background-color:steelblue;
     border: 2px #333 solid;
     color:#fff;
     font-weight: bold;
@@ -38,6 +46,15 @@ h2:first-child {
 
 .item-small {
     height: 50px;
+}
+
+.item-medium {
+    height: 90px;
+}
+
+.item-large {
+    width: 250px;
+    height: 250px;
 }
 
 .container-column {
@@ -58,7 +75,6 @@ h2:first-child {
 .container-justify-column-end {
     display: flex;
     height: 700px;
-    background-color: #ccc;
     justify-content: flex-end;
     flex-direction: column;
 }
@@ -76,14 +92,12 @@ h2:first-child {
 
 .container-row-align-end {
     height: 700px;
-    background-color: #ccc;
     display: flex;
     align-items: flex-end;
 }
 
 .container-column-align-end {
     height: 700px;
-    background-color: #ccc;
     display: flex;
     align-items: flex-end;
     flex-direction: column;
@@ -91,9 +105,82 @@ h2:first-child {
 
 .container-column-align-end-justify-end {
     height: 700px;
-    background-color: #ccc;
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
     flex-direction: column;
+}
+
+.container-row-space-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-row-space-around {
+    display: flex;
+    justify-content: space-around;
+}
+
+.container-column-space-between {
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container-row-center {
+    display: flex;
+    justify-content: center;
+}
+
+.item-margin {
+    margin: 0 15px;
+}
+
+.container-row-items-center {
+    display: flex;
+    align-items: center;
+}
+
+.container-row-baseline {
+    display: flex;
+    align-items: baseline;
+}
+
+.flex-container-flex-wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-container-flex-wrap-reverse {
+    display: flex;
+    flex-wrap: wrap-reverse;
+}
+
+.flex-container-item-centered {
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-grow {
+    flex-grow: 1;
+}
+
+.item-grow-x2 {
+    flex-grow: 2;
+}
+
+
+.item-first {
+    order: 1;
+}
+
+.item-second {
+    order: 2;
+}
+
+.item-third {
+    order: 3;
 }
