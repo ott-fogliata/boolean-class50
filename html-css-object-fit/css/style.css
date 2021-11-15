@@ -1,0 +1,21 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.bg {
+    width: 200px;
+    height: 500px;
+    background-image: url("../img/colosseo.jpeg");
+    background-size: cover;
+    background-position: 50% 50%;
+    /*  background: url("../img/colosseo.jpeg") 50% 50%; */
+}
+
+.img-class {
+    width: 200px;
+    height: 500px;
+    object-fit: cover;
+}
