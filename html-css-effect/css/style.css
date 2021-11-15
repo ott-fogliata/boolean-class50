@@ -13,13 +13,16 @@
     display: inline-block;
     text-align: center;
     margin: 10px;
-    transition: background-color 5s;
+    transition: all 5s;
     cursor: pointer;
+    position: relative;
+    left: 10px;
 }
 
 
 .button:hover {
     background-color: red;
+    right: 20px;
 }
 
 .box {
@@ -32,7 +35,6 @@
 .box:hover {
     width: 500px;
     height: 500px;
-    transition: all 2s
 }
 
 .box-shadow {
@@ -45,4 +47,45 @@
 .box-shadow:hover {
     box-shadow: 1px 8px 12px #333;
     transition: box-shadow 2s;
+}
+
+
+.box-container {
+    border: 4px #333 solid;
+    position: relative;
+    height: 600px;
+}
+
+.box-animated {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100px;
+    height: 100px;
+    background-color: teal;
+    animation-name: animationName;
+    animation-duration: 6s;
+}
+
+@keyframes animationName {
+    0% {
+        top: 0;
+        left: 0;
+    }
+    25% {
+        top: 0;
+        left: calc(100% - 100px);
+    }
+    50% {
+        top: calc(100% - 100px);
+        left: calc(100% - 100px);
+    }
+    75% {
+        top: calc(100% - 100px);
+        left: 0;
+    }
+    100% {
+        top: 0;
+        left: 0;
+    }
 }
