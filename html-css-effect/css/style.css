@@ -1,0 +1,48 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.button {
+    background-color: blue;
+    color: #fff;
+    padding: 6px 10px;
+    border-radius: 8px;
+    font-size: 18px;
+    display: inline-block;
+    text-align: center;
+    margin: 10px;
+    transition: background-color 5s;
+    cursor: pointer;
+}
+
+
+.button:hover {
+    background-color: red;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    background-color:tomato;
+    transition: all 2s
+}
+
+.box:hover {
+    width: 500px;
+    height: 500px;
+    transition: all 2s
+}
+
+.box-shadow {
+    width: 200px;
+    height: 200px;
+    background-color:tomato;
+    transition: box-shadow 2s;
+}
+
+.box-shadow:hover {
+    box-shadow: 1px 8px 12px #333;
+    transition: box-shadow 2s;
+}
