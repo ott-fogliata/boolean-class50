@@ -12,7 +12,8 @@
 /* desktop è quello di default */
 
 .container {
-    width: 1200px;
+    width: 100%;
+    max-width: 1200px;
     margin: 0 auto;
     background-color: #eee;
 }
@@ -59,3 +60,55 @@
 
 }
 
+
+/* --------------------------------------------- */
+
+.container-flex {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #eee;
+    margin-top: 20px;
+}
+
+.row-flex {
+    display: flex;
+    background-color: #ccc;
+    flex-wrap: wrap;
+}
+
+.box-flex {
+    width: 200px;
+    height: 200px;
+    background-color: teal;
+    margin-right: 10px;
+    border: 2px #333 solid;
+}
+
+/* tablet */
+@media screen and (min-width: 576px) and (max-width: 1199px) {
+    
+    .box-flex-1, .box-flex-2 {
+        width: calc(50% - 5px);
+    }
+
+    .box-flex-2, .box-flex-3 {
+        margin-right: 0;
+    }
+    .box-flex-3 {
+        width: 100%;
+    }
+
+}
+
+
+/* mobile */
+
+@media screen and (max-width: 575px) {
+
+    .box-flex {
+        width: 100%;
+        margin: 0;
+    }
+
+}
