@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.change-color {
+    width: 200px;
+    height: 200px;
+    background-color: brown;
+}
+
+@media screen and (min-width: 600px) {
+
+    .change-color {
+        background-color: teal;
+    }
+    
+}
