@@ -1,0 +1,16 @@
+.block-colored {
+    height: 200px;
+    background-color: teal;
+    border: 1px #333 solid;
+}
+
+.main {
+    background-color: tomato;
+    height: 300px;
+}
+
+.sidebar {
+    background-color: brown;
+    color: #fff;
+    height: 300px;
+}
