@@ -14,3 +14,31 @@
     color: #fff;
     height: 300px;
 }
+
+/* ------------------- */
+
+.box-ex {
+    background: blue;
+    height: 100px;
+    border:1px #fff solid;
+    padding: 10px;
+    color: #fff;
+}
+
+
+.box-ex > .row {
+    height: 100%;
+}
+
+.text-centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-ex > .row > div {
+    background-color: green;
+    color: #fff;
+    height: 100%;
+    border: 1px blue solid;
+}
