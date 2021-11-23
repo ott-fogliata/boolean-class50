@@ -36,3 +36,19 @@
     background-color: teal;
     height: 300px;
 }
+
+/* snack */
+.box-snack {
+    height: 200px;
+    background-color: teal;
+}
+
+/* snack 2 */
+.section-text {
+    background-color: green;
+    color: #fff;
+}
+
+.section-text .element {
+    border: 3px #333 solid;
+}
