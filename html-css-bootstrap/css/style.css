@@ -1,0 +1,38 @@
+.box-ex {
+    background: blue;
+    height: 100px;
+    border:1px #fff solid;
+    padding: 10px;
+    color: #fff;
+}
+
+.sample {
+    background-color: steelblue;
+    height: 200px;
+    border: 1px #fff solid;
+}
+
+.text-centered {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/** esempio spotify **/
+
+.sidebar-spotify {
+    width: 250px;
+    height: 500px;
+    background-color: #333;
+}
+
+.main {
+    background-color: teal;
+}
+
+/* dropbox example */
+
+.column-dropbox {
+    background-color: teal;
+    height: 300px;
+}
