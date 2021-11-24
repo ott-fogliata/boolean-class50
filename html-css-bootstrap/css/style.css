@@ -52,3 +52,23 @@
 .section-text .element {
     border: 3px #333 solid;
 }
+
+/* primo esempio about */
+
+.about {
+    background-color: teal;
+    margin-top: 50px;
+}
+
+.box-content {
+    height: 200px;
+    background-color: #333;
+    border: 2px #fff solid;
+}
+
+/* secondo esempio about */
+
+.about-inner {
+    width: 70%;
+    margin: 0 auto;
+}
