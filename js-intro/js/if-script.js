@@ -56,6 +56,46 @@ if (z === 1) {
 }
 
 // trasformiamo una strina in un numero.
-let age = prompt('Qual è la tua età?');
-age = parseInt(age);
+//let age = prompt('Qual è la tua età?');
+//age = parseInt(age);
 
+// alternativa con const
+const age = parseInt(prompt('Qual è la tua età?'));
+
+
+// ----------------------- OPERATORI LOGICI.
+
+outputHtml.innerHTML += '<hr>';
+
+const k = 20;
+
+// se il numero è maggiore di 40 e minore di 100, allora scrivi "maggiore 40, minore 100"
+// altrimenti se il numero è maggiore di 40 e maggiore di 100, "maggiore 100"
+// altrimenti, "minore uguale di 40"
+
+// cond1 AND cond2
+if (k > 40 && k < 100) {
+    outputHtml.innerHTML += '<br/> maggiore 40, minore 100';
+} else if(k >= 100) {
+    outputHtml.innerHTML += "<br/> maggiore uguale 100";
+} else {
+    outputHtml.innerHTML += "<br/> minore uguale 40";
+}
+
+
+const g = 'Gino';
+
+// se l'invitato si chiamo Gino oppure si chiama Pino, può entrare alla festa.
+if (g === 'Gino' || g === 'Pino') {
+    outputHtml.innerHTML += "<br/> Benvenuto alla festa!";
+} else {
+    outputHtml.innerHTML += "<br/> Chiamo la sicurezza!";
+}
+
+
+
+
+
+
+
+// todo (pari|dispari)
