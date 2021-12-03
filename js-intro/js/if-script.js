@@ -95,7 +95,53 @@ if (g === 'Gino' || g === 'Pino') {
 
 
 
+outputHtml.innerHTML += '<hr>';
+
+/* ------------  SWITCH CASE  --------------*/
+
+// Alla festa possono entrare solo 3 invitati, Gino, Pino, Lino.
+
+const newImbucato = 'Pino';
+
+let text;
+
+switch (newImbucato) {
+    
+    case "Gino":
+        text = "Ciao Gino, entra pure!";
+        break;
+
+    case "Pino":
+        text = "Ciao Pino, da quanto tempo!";
+        break;
+    
+    case "Lino":
+        text = "Ciao Lino, sei amico di Pino?";
+        break;
+
+    default:
+        text = "Chiamo la sicurezza!";
+
+}
+
+
+outputHtml.innerHTML += `<br/>${text}`;
 
 
 
-// todo (pari|dispari)
+// pari|dispari
+
+// https://www.w3schools.com/js/js_arithmetic.asp
+// try: https://www.w3schools.com/js/tryit.asp?filename=tryjs_oper_mod
+
+let h = 4;
+
+// verifichiamo che h sia pari o disparu
+
+if (h % 2 == 0) {
+    outputHtml.innerHTML += '<br/>il numero è pari';
+} else {
+    outputHtml.innerHTML += '<br/>il numero è dispari';
+}
+
+// per chi si vuole male: https://it.wikipedia.org/wiki/Parit%C3%A0_dello_zero#:~:text=9%20Collegamenti%20esterni-,Perch%C3%A9%20zero%20%C3%A8%20pari,uguale%20a%205%20%C3%97%202.
