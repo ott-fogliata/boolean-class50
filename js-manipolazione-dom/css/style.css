@@ -1,0 +1,26 @@
+#box {
+    background-color: teal;
+    width: 200px;
+    height: 200px;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+#button-box {
+    width: 200px;
+    text-align: center;
+    height: 20px;
+    line-height: 20px;
+    background-color: teal;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 50px 0;
+}
