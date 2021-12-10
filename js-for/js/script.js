@@ -107,3 +107,30 @@ for (let i = 0; i < 16; i++) {
     }
 
 }
+
+
+for (let i = 0; i < 3; i++) {
+    // istruzioni da eseguire    
+}
+
+/*
+  
+  1. 
+  i è 0 => i è minore di 3? 
+  sì => esegue istruzioni
+  i++
+
+  2.
+  i è 1 => i è minore di 3? 
+  sì => esegue istruzioni
+  i++
+
+  3. 
+  i è 2 => i è minore di 3? 
+  sì => esegue istruzioni
+  i++
+
+  4. i è 3 => i è minore di 3? 
+  no => esci
+ 
+*/
