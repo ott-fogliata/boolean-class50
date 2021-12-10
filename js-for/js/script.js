@@ -68,6 +68,42 @@ for (let i = 10; i >= 0; i--) {
 output2Html.innerHTML += 'BUON ANNO!';
 
 
+/*
+1. utilizzando un ciclo for contare fino a 20
+2. utilizzando un ciclo for stampare nell’html 16 box (dei div)
+(bonus, utilizziamo flex per allinearli?) 
+ */
+const contaHtml = document.querySelector('.conta');
+
+for (let x = 0; x <= 20; x++) {
+    contaHtml.innerHTML += `<span>${x}</span> `;
+}
+
+// -------------------------------------------------
+
+const containerBoxes = document.querySelector('.container-boxes');
 
 
 
+// Vogliamo rendere rossi i box dispari, mentre il box divisibile per 5 è nero
+
+// dentro il form, se il contatore diviso per 2 non ha resto, allora è pari => non faccio nulla
+// se il contatore invece, diviso per 2 ha un resto diverso da zero, allora è dispari => 
+// => oltre ad aggiungere la classe box inserisco anche la classe box-red
+// ... se divisibile per 5, bla bla bla
+
+for (let i = 0; i < 16; i++) {
+    if (i % 5 === 0 && i !== 0) {
+        // divisibile per 5
+        containerBoxes.innerHTML += `<div class="box box-black">${i} (ciao)</div>`  
+    }
+    else if (i % 2 === 0) {
+        // pari
+        containerBoxes.innerHTML += `<div class="box">${i}</div>` 
+    }  
+    else {
+        // dispari
+        containerBoxes.innerHTML += `<div class="box box-red">${i}</div>`
+    }
+
+}
