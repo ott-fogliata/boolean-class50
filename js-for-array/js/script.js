@@ -272,3 +272,38 @@ console.log('L\'ultimo valore dinamico è ' + invitati[invitati.length - 1])
 invitati.push('Chiara');  // per aggiungere in coda un elemento
 
 console.log(invitati)
+
+/*
+Abbiamo una lista di invitati: Anna, Maura, Mimmo, Pino, Gianluca
+Chiedere all’utente il suo nome e aggiungerlo alla lista
+Stampare in console:
+il primo invitato
+l’ultimo invitato
+lunghezza array => quanti sono gli invitati?
+ */
+
+// const invitatiList = ['Anna', 'Maura', 'Mimmo', 'Pino', 'Gianluca'];
+// const userName = prompt('Dimmi il tuo nome');
+// invitatiList.push(userName);
+
+// console.log('Il primo invitato è: ' + invitatiList[0]);
+
+// console.log('L\'ultimo invitato è: ' + invitatiList[invitatiList.length - 1]);
+
+// console.log('Gli invitati sono: ' + invitatiList.length);
+
+const nomi = ["Luca", "Marco", "Paolo"];
+ 
+for (let i = 0; i < nomi.length; i++) {
+    console.log(nomi[i])
+}
+
+// let i = 0;
+// console.log(nomi[i]);
+// i++;
+
+// console.log(nomi[i]);
+// i++;
+
+// console.log(nomi[i]);
+// i++;
