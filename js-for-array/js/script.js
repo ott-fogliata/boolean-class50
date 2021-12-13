@@ -209,37 +209,56 @@ for (let i = 1; i <= 100; i++) {
 
 // createElement esempio
 
-const element1 = 'HomePage'
-const element2 = 'Welcome'
-const element3 = 'About Us'
-const element4 = 'Login'
+// const element1 = 'HomePage'
+// const element2 = 'Welcome'
+// const element3 = 'About Us'
+// const element4 = 'Login'
 
-// gli elementi (futuri <li>) sono 4
-for (let i = 0; i < 4; i++) {
-    // TODO! perché ora non possiamo farlo
-}
+// // gli elementi (futuri <li>) sono 4
+// for (let i = 0; i < 4; i++) {
+//     // TODO! perché ora non possiamo farlo
+// }
 
-// ora siamo costretti ANCORA al copia incolla
+// // ora siamo costretti ANCORA al copia incolla
+
+// // elemento esistente
+// const ul = document.querySelector('nav ul');
+
+// // creo nuovo li in memoria (all'interno di una
+// // variabile) => non è ancora in pagina
+// const li = document.createElement('li');
+// li.innerHTML = element1;
+
+// // prendiamo l'elemento in memoria e lo inseriamo
+// // all'interno dell'html
+// ul.append(li)
+
+
+// const li2 = document.createElement('li');
+// li2.innerHTML = element2;
+// ul.append(li2)
+
+// Ma non c'è un modo più semplice e più elegante?
 
 // elemento esistente
 const ul = document.querySelector('nav ul');
 
-// creo nuovo li in memoria (all'interno di una
-// variabile) => non è ancora in pagina
-const li = document.createElement('li');
-li.innerHTML = element1;
+const listMenu = ['Homepage', 'Welcome', 'About Us', 'Login'];
 
-// prendiamo l'elemento in memoria e lo inseriamo
-// all'interno dell'html
-ul.append(li)
+for (let i = 0; i < listMenu.length; i++) {
+    const element = document.createElement('li');
+    element.innerHTML = listMenu[i];
+    // element.append(listMenu[i])
+    ul.append(element);
+}
 
 
-const li2 = document.createElement('li');
-li2.innerHTML = element2;
-ul.append(li2)
 
-// Ma non c'è un modo più semplice e più elegante?
 
+
+
+
+// --------------------------------------------------------
 
 let invitato1 = 'Pippo';
 let invitato2 = 'Pino';
@@ -307,3 +326,4 @@ for (let i = 0; i < nomi.length; i++) {
 
 // console.log(nomi[i]);
 // i++;
+
