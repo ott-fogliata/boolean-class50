@@ -16,7 +16,7 @@ let userName = prompt('Dimmi il tuo nome');
 // => (if) se il nome dell'utente è uguale a quello dell'invitato trasformo una variabile in TRUE
 // altrimenti la lascio in FALSE (non c'è bisogno di un vero else)
 for (let i = 0; i < invitati.length; i++) {
-    if (userName.toLowerCase === invitati[i].toLowerCase) {
+    if (userName.toLowerCase() === invitati[i].toLowerCase()) {
         trovato = true;
         // break; // <= opzionale, esce dal ciclo
     }
