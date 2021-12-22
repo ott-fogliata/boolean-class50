@@ -1,0 +1,50 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.campominato-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 500px;
+}
+
+.box {
+    width: 50px;
+    height: 50px;
+    border: 2px #333 solid; 
+}
+
+.box.green {
+    background-color: green;
+}
+
+
+.box.red {
+    background-color: red;
+}
+
+.game-over {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    pointer-events: none;
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    line-height: 100vh;
+}
+
+.container.end .box {
+    pointer-events: none;
+}
+
+.game-over.loser {
+    background-color: red;
+}
+
+.game-over.winner {
+    background-color: green;
+
+}
