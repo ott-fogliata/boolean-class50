@@ -117,4 +117,16 @@ for (let i = 0; i < negozio.length; i++) {
         const output = `${k}: ${smartphone[k]} <br/>`
         smartphonesHtml.innerHTML += output
     }
+
+    // for (let k in negozio[i]) {
+    //     const output = `${k}: ${negozio[i][k]} <br/>`
+    //     smartphonesHtml.innerHTML += output
+    // }
+
+    // oppure avremmo potuto fare così, qualora fosse già chiara 
+    // e prestabilita la struttura dell'oggetto
+    // smartphonesHtml.innerHTML += 'nome: ' + smartphone.nome + '<br/>';
+    // smartphonesHtml.innerHTML += 'memory: ' + smartphone.memory + '<br/>';
+    // smartphonesHtml.innerHTML += '5g: ' + smartphone['5g'] + '<br/>';
+
 }
