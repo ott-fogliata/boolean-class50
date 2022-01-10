@@ -68,3 +68,53 @@ for (let key in smartphone) {
     const output = `${key} => ${smartphone[key]}` 
     outputHtml.innerHTML += output + '<br/>'
 }
+
+
+/**
+Altro piccolissimo snack:
+Creiamo un array di 3 oggetti smartphone, ogni smartphone ha queste proprietà:
+- nome modello
+- memory
+- se è presente il 5g o meno
+
+Stampare in pagina il nome, la memoria e se è 5g o meno di ciascun smartphone. 
+*/
+
+const smartphonesHtml = document.querySelector('.smartphones');
+
+// array di oggetti
+const negozio = [
+
+    {
+        nome: 'Iphone 13',
+        memory: 64,
+        '5g': true
+    },
+
+    {
+        nome: 'Samsung',
+        memory: 128,
+        '5g': true
+    },
+
+    {
+        nome: 'Xiaomi',
+        memory: 64,
+        '5g': false
+    }
+
+];
+
+for (let i = 0; i < negozio.length; i++) {
+
+    const smartphone = negozio[i];
+
+    smartphonesHtml.innerHTML += `<br/><h2>${smartphone.nome}</h2>`
+    // smartphonesHtml.innerHTML += `<br/><h2>${negozio[i].nome}</h2>`
+
+    for (let k in smartphone) {
+        console.log(k, smartphone[k])
+        const output = `${k}: ${smartphone[k]} <br/>`
+        smartphonesHtml.innerHTML += output
+    }
+}
