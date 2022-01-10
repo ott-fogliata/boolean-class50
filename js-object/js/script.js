@@ -47,3 +47,24 @@ smartphone.ram = 12;
 // se la proprietà non esiste, allora js aggiungerà la nuova coppia chiave valore:
 // (simile al push per l'array)
 smartphone.wifi6 = true;
+
+
+console.log("-------------------------------------")
+
+
+/*
+Non conosciamo le proprietà di un oggetto. 
+    => non conosciamo le chiavi.
+
+
+Obiettivo: Stampare tutte le proprietà di un oggetto (con il valore)
+*/
+
+const outputHtml = document.getElementById('output');
+
+// for-in 
+// per ogni chiave in smartphone
+for (let key in smartphone) {
+    const output = `${key} => ${smartphone[key]}` 
+    outputHtml.innerHTML += output + '<br/>'
+}
