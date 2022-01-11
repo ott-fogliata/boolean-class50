@@ -88,19 +88,19 @@ const negozio = [
     {
         nome: 'Iphone 13',
         memory: 64,
-        '5g': true
+        rete5g: true
     },
 
     {
         nome: 'Samsung',
         memory: 128,
-        '5g': true
+        rete5g: true
     },
 
     {
         nome: 'Xiaomi',
         memory: 64,
-        '5g': false
+        rete5g: false
     }
 
 ];
@@ -130,3 +130,38 @@ for (let i = 0; i < negozio.length; i++) {
     // smartphonesHtml.innerHTML += '5g: ' + smartphone['5g'] + '<br/>';
 
 }
+
+
+// creiamo un nuovo oggetto e pushiamolo in negozio
+
+// const name = 'motorola'
+// const memory = 64
+// const rete5g = true
+
+// // Se le chiavi corrispondono ai nomi delle variabili 
+// // possiamo inserirle direttamente
+
+
+// const newObject = {
+//     name,   // qui lui crea una chiave dal nome della variabile e il suo valore è il valore della variabile
+//     memory,
+//     rete5g
+// }
+
+// console.log(newObject)
+
+// negozio.push(newObject)
+
+const newSmartphone = {
+    memory: 64,
+    ram: 6,
+    gorillaGlass: true,
+    rete5g: true,
+    "5g": true
+}
+
+const { memory, gorillaGlass } = newSmartphone
+
+// const {memory, gorillaGlass} <= newSmartphone
+
+console.log(memory, gorillaGlass)
