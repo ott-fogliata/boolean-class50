@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+</head>
+<body>
+    
+    <div id="app">
+        <!-- il modello (il suo dato) dell'input
+        è il message dentro data. => v-model
+        -->
+        Message: <input v-model="message">
+        <br/>
+
+        <!-- stampa il valore della proprietà 
+        message in data.
+        -->
+        <span >{{ message }}</span>
+
+        <hr />
+
+        <div class="color-container">
+            <input v-model="color">
+
+            <!-- const classe = 'box ' + color; -->
+            <!-- const classe = `box ${color}; -->
+            <div class="box" :class="color">
+
+            </div>
+        </div>
+
+        <button @click="saluta">Click me!</button>
+    </div>
+    
+
+    <script src="js/script.js"></script>
+</body>
+</html>
