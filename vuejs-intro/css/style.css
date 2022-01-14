@@ -29,3 +29,37 @@
 .color-container .blue {
     background-color:blue;
 }
+
+/* modale */
+
+.modal {
+    width: 100%;
+    height: 300px;
+    background-color: teal;
+    line-height: 300px;
+    text-align: center;
+    color: #333;
+    font-size: 24px;
+}
+
+/* student */
+
+.student-name {
+    color:#333;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* slider di freddure */
+
+.freddura {
+    margin-top: 40px;
+    padding: 20px;
+    border: 2px #ccc solid;
+    border-radius: 10px;
+    box-shadow: 0 0 6px #ccc;
+}
+
+.card {
+    border: 1px #000 solid;
+}

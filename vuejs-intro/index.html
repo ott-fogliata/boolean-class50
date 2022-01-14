@@ -10,7 +10,7 @@
 </head>
 <body>
     
-    <div id="app">
+    <span id="app">
         <!-- il modello (il suo dato) dell'input
         è il message dentro data. => v-model
         -->
@@ -35,6 +35,103 @@
         </div>
 
         <button @click="saluta">Click me!</button>
+
+        <hr />
+
+        <!-- 
+            v-if
+            -> serve per scrivere o non scrivere un elemento
+            nell'html.
+            -> il 99% delle volte è collegato a un data.
+
+            v-if="modalShow === true"
+        -->
+        <h2>Modale</h2>
+        <button @click="openModal">Open/Close Modal</button>
+        <div v-if="modalShow" class="modal">
+            Ciao, sono modale
+        </div>
+
+        <hr />
+        <!--
+            chiediamo in un input l'età dell'utente, 
+            scriviamo sei maggiorenne se age >= 18,
+            altrimenti scriviamo sei minorenne
+        -->
+        <h2>Maggiorenne</h2>
+        <input v-model="age">   
+
+        <!--
+            v-if e v-else devono essere nello stesso container
+            (allo stesso livello)
+        -->
+        <span v-if="age >= 18">Sei maggiorenne</span>
+        <span v-else>Sei minorenne</span>
+
+        <br />
+        <!--
+
+            const message = age >= 18 ? 'sei maggiorenne' : 'sei minorenne'
+            ==> soluzione usa e getta
+        -->
+        <span>{{ age >= 18 ? 'sei maggiorenne' : 'sei minorenne' }}</span>
+
+        <hr/>
+        <h2>v-for</h2>
+
+        <!--
+        <span>{{ students[0] }}</span>
+        <span>{{ students[1] }}</span>
+        <span>{{ students[2] }}</span> 
+        -->
+        <!-- 
+            cosa vogliamo?
+            -> per ogni nome in students, 
+            stampiamo lo span con classe student-name
+            e all'interno il nome dello studente
+            
+            per ogni nome nell'array students farà questo..
+        -->
+        <span v-for="(nome, i) in students" class="student-name">
+            {{i}}: {{nome}} |
+        </span>
+
+        <hr/>
+        <br />
+        <h2>Slider di freddure</h2>
+
+        <!--
+            esempio v-for con oggetto
+            <div v-for="freddura in freddure" class='freddura'>
+            <h3>{{ freddura.titolo }}</h3>
+            <p>{{ freddura.frase }}</p>
+        </div> -->
+
+        <div class='freddura'>
+            <h3>{{ freddure[currentIndex].titolo }}</h3>
+            <p>{{ freddure[currentIndex].frase }}</p>
+        </div>
+
+        <div @click="prevFreddura">prev</div>
+        <div @click="nextFreddura">next</div>
+
+        <hr />
+        <!-------- -->
+        <!-- decidere il nome di una classe con una condizione -->
+
+        <!-- al seguente div daremo classe active se la proprietà nel data
+        di nome age è maggiore di 18, altrimenti gli daremo classe disable.
+        Inoltre il div avrà sempre la classe card
+
+        RICORDATEVI: :class è una lista (array)
+        https://vuejs.org/v2/guide/class-and-style.html
+        -->
+        <div :class="['card', age >= 18 ? 'active' : 'disable']">Classe automatica</div>
+
+        
+
+
+
     </div>
     
 
