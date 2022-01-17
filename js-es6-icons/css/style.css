@@ -1,0 +1,29 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.box {
+    border: 1px #ccc solid;
+    border-radius: 5px;
+    padding: 25px;
+    text-align: center;
+    width: 100px;
+}
+
+.box > i {
+    font-size: 30px;
+}
+
+.box.orange > i {
+    color: orange;
+}
+
+.box.blue > i {
+    color: blue;
+}
+
+.box.green > i {
+    color: green;
+}

@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, sans-serif;
+    background-color: #023047;
+    color: #050505;
+    font-size: 100%;
+}
+
+h1 {
+    font-size: calc(1.5rem + 2vw);
+    color: white;
+}
+
+.main-title {
+    text-align: center;
+    margin: 24px 0;
+}
+
+.posts-list {
+    width: 90%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.posts-list > * {
+    margin-bottom: 24px;
+}
+
+.post { 
+    padding: 16px;
+    background-color: white;
+}
+
+.post__header {
+    margin-bottom: 16px;
+}
+
+.post-meta {
+    display: flex;
+}
+
+.post-meta__icon {
+    margin-right: 24px;
+}
+
+.post-meta__data {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.post-meta__author {
+    font-weight: bold;
+}
+
+.post-meta__time {
+    font-size: 0.8rem;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    max-width: 60px;
+}
+
+.profile-pic-default {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0CD977;
+    height: 60px;
+    width: 60px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.profile-pic-default span {
+    font-weight: bold;
+    color: #023047;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+.post__text {
+    margin-bottom: 16px;
+}
+
+.post__image {
+    margin-bottom: 16px;
+}
+
+.post__image img {
+    width: 100%;
+}
+
+.likes {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.like-button {
+    display: inline-block;
+    padding: 16px;
+    border-radius: 8px;    
+    text-decoration: none;
+    color: #404040;
+}
+
+.like-button:not(.like-button--liked):hover {
+    background-color: #e3e3e3
+}
+
+.like-button__label {
+    font-weight: bold;
+}
+
+.like-button--liked {
+    color: #0CD977;
+    cursor: default;
+}
